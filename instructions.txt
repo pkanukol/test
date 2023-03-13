@@ -1,0 +1,16 @@
+pip install virtualenv
+
+go to the folder where you want to create django project :
+devdjango > virtualenv -p /usr/bin/python3 proj
+proj folder is created with Scripts, Include, Lib and pyvenv.cfg
+
+cd proj
+Scripts\activate => will activate the virtual env.
+Scripts\deactivate => will deactivate
+
+devdjango > proj\scripts\django-admin startproject mysite
+=> this creates a folder mysite with another folder mysite and manage.py.
+the inner mysite folder will have - settings.py, urls.py
+
+python manage.py runserver -> django starts
+python manage.py startapp <appname> -> creates a new app folder with models, views, migrations folder and other files
